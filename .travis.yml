@@ -1,5 +1,21 @@
 language: go
-
 go:
   - 1.9
-  - master
+env:
+  global:
+    - GOARCH=amd64
+  matrix:
+    - GOOS=linux EXT=
+    - GOOS=windows EXT=.exe
+script:
+  - go build -o build/randoom.$GOOS$EXT cmd/randoom/*.go
+deploy:
+  provider: releases
+  api_key:
+    secure: NFT7/5eFvUPROrSPNPQKn4uJe7D29WQkRE1XsRQ+KtqxwUmJxsN5gqSe9xhDcqW0PwJ1bJDzD6vFwWsr9fADFxsiy+FiLUFus9mw2EDn+gmXGySIypECWWQL3suQbTBTQ2VWWQ/KTMQe5ClU26NAKSYd3rjEyIAmS3k5b+i7FHaoxkQZrl0QAWSGrEs89CacBQINqrIY5EWPszxlpqWcqMAO5cAQ3cRdbvall++5/o/uAObStDkqaGsSnUX03KwRsaHLSChPwS52XbTeEiSh+vQs1QbCZRHW1wulekuRHSf5II+atGekaipiG6rsO6Qyjb3wcDfoJiq6TJnz3I16MQ4RL7JjtOb0DI2lXLmtoQP+8DVL4/7LYhB9O669lQfwjH7jk/ixZvpZzhJxI3ngdAhwtc1Br3zp3jvJKSN8vJV0Zn0ntoBDa5z/Abio4IZvwJY48iocu1vdKQS1kZq4sLvPzN4Qph3rNQsl+zUHaQlLOo37RzhsdH0qF8RDbVmB7jbVy/JWe5SSoIFYpnL5jtd7FgjYuGKjguRVf0lS5jENPjFGEjpepskdK+eWZdST9Ze5PSVjFEZ4xvowkPypa3WNtW4C/diRRwb6yhgzB8Bu+89YWlQxhNsK2ZoCqa10c4+KmpxAx+jSgDqmXYLHprjiyzZZI51nnFe2o9gLjrE=
+  file:
+    - randoom
+    - randoom.exe
+  skip_cleanup: true
+  on:
+    repo: johnsto/randoom
