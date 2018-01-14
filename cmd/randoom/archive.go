@@ -7,7 +7,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	wadio "github.com/johnsto/go-randoom/pkg/wad"
+	wadio "github.com/johnsto/randoom/pkg/wad"
 	"github.com/pkg/errors"
 )
 

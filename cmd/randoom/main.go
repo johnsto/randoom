@@ -9,8 +9,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/johnsto/go-randoom/pkg/idgames"
-	wadio "github.com/johnsto/go-randoom/pkg/wad"
+	"github.com/johnsto/randoom/pkg/idgames"
+	wadio "github.com/johnsto/randoom/pkg/wad"
 	"github.com/pkg/errors"
 )
 

@@ -1,6 +1,6 @@
 package wad_test
 
-import . "github.com/johnsto/go-randoom/pkg/wad"
+import . "github.com/johnsto/randoom/pkg/wad"
 import "testing"
 
 func TestIsMapName(t *testing.T) {
