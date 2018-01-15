@@ -48,3 +48,4 @@ You can pass your chosen skill level (and executable) via the command line, e.g.
 - [ ] Support DeHacked files.
 - [ ] Support multi-PWAD archives.
 - [ ] Tidy up command line parsing.
+- [ ] Improve release packaging.
