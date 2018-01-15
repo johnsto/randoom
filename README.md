@@ -34,8 +34,17 @@ If you're using another port, or want more control, you can instead pass your ch
 
     randoom -game doom vavoom -skill 4
 
-## How do I set the skill?
+### How do I set the skill?
 
 You can pass your chosen skill level (and executable) via the command line, e.g.
 
     randoom -game doom2 doomsday -skill 2
+
+## TODO
+
+- [x] Test on Linux.
+- [ ] Test on Windows.
+- [ ] Test on MacOS.
+- [ ] Support DeHacked files.
+- [ ] Support multi-PWAD archives.
+- [ ] Tidy up command line parsing.
