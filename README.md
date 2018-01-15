@@ -32,13 +32,13 @@ It has built-in support for Chocolate Doom, Doom Legacy, Doomsday, GZDoom, ZDoom
 
 If you're using another port, or want more control, you can instead pass your chosen executable (and any custom arguments), e.g.:
 
-    randoom -game doom vavoom -skill 4
+    randoom -game doom vavoom -nomusic -fast -nostartup
 
 ### How do I set the skill?
 
 You can pass your chosen skill level (and executable) via the command line, e.g.
 
-    randoom -game doom2 doomsday -skill 2
+    randoom -game doom2 doomsday -skill 4
 
 ## TODO
 
@@ -47,5 +47,6 @@ You can pass your chosen skill level (and executable) via the command line, e.g.
 - [ ] Test on MacOS.
 - [ ] Support DeHacked files.
 - [ ] Support multi-PWAD archives.
+- [ ] Support finding IWADs in local Steam installs.
 - [ ] Tidy up command line parsing.
 - [ ] Improve release packaging.
