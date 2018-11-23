@@ -6,7 +6,7 @@
 
 Install RanDOOM using `go get`, e.g.
 
-    go get github.com/johnsto/randoom/pkg/randoom
+    go get github.com/johnsto/randoom/cmd/randoom
 
 You can then launch it with `randoom`.
 
