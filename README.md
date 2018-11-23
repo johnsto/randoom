@@ -12,6 +12,8 @@ You can then launch it with `randoom`.
 
 ## FAQ
 
+## 
+
 ### What does it actually do?
 
 RanDOOM is really just a downloader and launcher for WAD files found in the [idgames repository](https://legacy.doomworld.com/idgames/), with a distinct focus on giving a endless\* supply of DOOMage. It does this by finding a downloading a random WAD file each time it's launched.
@@ -39,11 +41,19 @@ If you're using another port, or want more control, you can instead pass your ch
 You can pass your chosen skill level (and executable) via the command line, e.g.
 
     randoom -game doom2 doomsday -skill 4
+    
+### What does "Couldn't find DOOM executable! executable file not found in %PATH%" mean?
+
+That means RanDOOM couldn't find the Doom executable! On Linux, this means it's not in your path - try running `which doom` or `which doom2` to verify, and then fix accordingly.
+
+On Windows, things are trickier. I suggest installing [Chocolate Doom](https://www.chocolate-doom.org) as it gives you the vanilla Doom experience and automatically loads in IWADs from Steam. Try extracting it into (e.g.) `c:\ChocolateDoom`. Then you can run randoom like this:
+
+    randoom -game doom c:\ChocolateDoom\chocolate-doom.exe -nomusic -fast -nostartup
 
 ## TODO
 
 - [x] Test on Linux.
-- [ ] Test on Windows.
+- [x] Test on Windows.
 - [ ] Test on MacOS.
 - [ ] Support DeHacked files.
 - [ ] Support multi-PWAD archives.
