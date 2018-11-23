@@ -12,8 +12,6 @@ You can then launch it with `randoom`.
 
 ## FAQ
 
-## 
-
 ### What does it actually do?
 
 RanDOOM is really just a downloader and launcher for WAD files found in the [idgames repository](https://legacy.doomworld.com/idgames/), with a distinct focus on giving a endless\* supply of DOOMage. It does this by finding a downloading a random WAD file each time it's launched.
